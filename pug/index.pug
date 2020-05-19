@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    include components/head.pug
+  body
+    .login
+      .login__sect
+        img(src="src/assets/icon/logo-mr.svg", alt="")
+        h1 Mr. Fork
+        .login__sect--load#load
+          img(src="src/assets/icon/load.svg", alt="")
+        .login__sect--cont
+          h2 Descubre restaurantes y comida
+          .cont__btn
+            .social
+              a.btn.f(href="home.html")
+                i.icon-facebook
+              a.btn.g(href="home.html")
+                i.icon-google
+    script
+      include ../src/js/viewload.js

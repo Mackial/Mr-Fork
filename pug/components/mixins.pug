@@ -1,0 +1,42 @@
+mixin item-product(img, name, desc, price)
+  .cont__item
+    .heart-btn
+      i.icon-compartir
+    .cont__item--img
+      figure
+        img(src="src/assets/img/"+img, alt="")
+    .cont__item--info
+      .data
+        h2=name
+        span=desc
+      .price
+        i.icon-dinero
+        span=price
+
+mixin item-simple-product(name, desc, price)
+  .cont__simple-item
+    .cont__simple-item--info
+      .simple-data
+        h2=name
+        span=desc
+    .cont__simple-item--btn
+      .simple-price
+        i.icon-dinero
+        span=price
+      .simple-share-btn.btn
+        i.icon-compartir
+      .simple-more-btn.btn
+        i.icon-proximo
+
+mixin item-notice(img, title, desc)
+  .notice__cont--item
+    img(src="src/assets/img/"+img, alt="")
+    .notice__cont--item-info
+      h2=title
+      p=desc
+
+mixin item-search(img, category)
+  .search__cont--item
+    h2=category
+    img(src="src/assets/img/"+img, alt="")
+

@@ -1,0 +1,60 @@
+.login
+  background-image: linear-gradient( rgba(first-cl), rgba(third-cl))
+  height: 100vh
+  &__sect
+    height 100%
+    width: 90%
+    display: flex
+    flex-flow: column
+    margin: auto
+    justify-content: center
+    align-items: center
+    color: #ffffff
+    img 
+      width: 80px
+      align-self: center
+    h1
+      font-family: fontOne
+      font-weight: 500
+      font-size: 5em
+    &--load
+      width: 50px
+    #load
+      animation: girar 1s linear infinite
+      img 
+        width: 100%
+    &--cont
+      display: none
+      width: 100%
+      background-color: rgba(#ffffff, .3)
+      border-radius: 5px
+      padding: 10% 5%
+      box-shadow: 0px 6px 11px -2px rgba(0,0,0,0.1)
+      h3
+        margin: 0
+        min-width: 250px
+      h2
+        line-height: 1em
+      .social
+        display: flex
+        justify-content: space-evenly
+        max-width 300px
+        margin: auto
+        padding-top: 5%
+        a
+          color: #ffffff
+          text-decoration: none
+        .btn
+          border-radius: 5px
+          padding: 10px 15px
+          font-size: 1.5em
+        .btn.g
+          background-color: #db4437
+        .btn.f
+          background-color: #4267b2
+
+@keyframes girar 
+  from
+    transform: rotate(0deg)
+  to   
+    transform: rotate(360deg)

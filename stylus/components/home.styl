@@ -1,0 +1,72 @@
+@import 'globals.styl'
+
+.home
+  width: 95%
+  height: 100%
+  margin: auto
+  padding-top: 10px
+  span
+   font-weight: 600
+   color: dark-cl
+  &__card
+    height: 32%
+    border-radius: 5px
+    margin-bottom: 2%
+    box-shadow: -1px 3px 6px rgba(0,0,0,.2);
+    background-color: white
+    a
+      text-decoration: none
+    &--cover
+      height 66.6666%
+      img
+        border-radius: 5px 5px 0 0 
+        // border-top-left-radius:  5px
+        // border-top-right-radius: 5px
+        height: 100%
+        width: 100%
+    &--info
+      display: flex
+      justify-content: space-between
+      padding: 0 20px 0 10px
+      height: 33.3333%
+      &-data
+        width: 100%
+        display: flex
+        flex-flow: column
+        justify-content: center
+        line-height: .8em
+        h2
+          margin-bottom: 4px
+          font-family: fontOne
+          font-weight: 500
+          font-size: 1.2em
+        .info-buss
+          display: flex
+          justify-content: space-between
+          font-family: fontTwo
+          margin-right: 15px
+      p
+        margin: 0
+        font-size: .8em
+        padding-top: 5px
+        text-align: center
+
+      &-extra
+        margin-top: -30px
+        &-img
+          img
+            width: 50px
+            border-radius: 5px
+            // box-shadow: -1px 1px 15px rgba(0,0,0,.4);
+        .time
+          font-weight: 500
+          color: rgba(dark-cl, .7)
+        &-qu
+          display: flex
+          justify-content: center
+          align-items: center
+          i
+            color: star-cl
+            margin-right: 5px
+
+// @media screen and ()

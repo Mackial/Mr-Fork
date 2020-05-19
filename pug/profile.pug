@@ -1,0 +1,63 @@
+extend components/template.pug
+
+block content
+  .content
+    .profile
+      .profile__main
+        .main
+          .main__cover
+            .back.back-cover
+              a(href="home.html")
+                i.icon-arrow-left2
+            figure
+              img(src="src/assets/img/default-cover.jpg", alt="")
+          .main__cont
+            .main__cont--info
+              .back
+                a(href="home.html")
+                  i.icon-arrow-left2
+              .main__cont--info-data
+                h2  Bussines Name
+                span Kind of food
+              .main__cont--info-logo
+                figure
+                  img(src="src/assets/img/perfil-cover-default.svg", alt="")
+                .wait-time
+                  span Entrega 30 Min -
+                  i.icon-dinero
+                  span 10
+            .category
+              .category__cont
+                .category__cont--sect.on-sect
+                  span Dish
+                .category__cont--sect
+                  span Dish
+                .category__cont--sect
+                  span Dish
+                .category__cont--sect
+                  span Dish
+                .category__cont--sect
+                  span Dish
+                .category__cont--sect
+                  span Dish
+            
+            
+      .profile__content
+        .cont
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+    
+    include components/contact-acces.pug
+          
+  script
+    include ../src/js/animations.js  
