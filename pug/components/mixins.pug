@@ -1,7 +1,5 @@
 mixin item-product(img, name, desc, price)
   .cont__item
-    .heart-btn
-      i.icon-compartir
     .cont__item--img
       figure
         img(src="src/assets/img/"+img, alt="")
@@ -23,8 +21,6 @@ mixin item-simple-product(name, desc, price)
       .simple-price
         i.icon-dinero
         span=price
-      .simple-share-btn.btn
-        i.icon-compartir
       .simple-more-btn.btn
         i.icon-proximo
 
@@ -39,4 +35,18 @@ mixin item-search(img, category)
   .search__cont--item
     h2=category
     img(src="src/assets/img/"+img, alt="")
+
+mixin item-card(view, cover, bussinesName, type, logo)
+  .home__card
+    a(href=view)
+      .home__card--cover
+        img(src="src/assets/img/"+cover, alt="")
+      .home__card--info
+        .home__card--info-data
+          h2=bussinesName
+          .info-buss
+            p=type
+        .home__card--info-extra
+          .home__card--info-extra-img
+            img(src="src/assets/img/"+logo, alt="")
 

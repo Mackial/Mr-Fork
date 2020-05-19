@@ -53,6 +53,8 @@
               border-radius: 5px
               box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2);
             .wait-time
+              .price
+                font-size: 1.2em
               i
                 font-size: 12px
       .category
@@ -81,60 +83,42 @@
     height 100%
     .cont
       width: 100%
-      display: flex
-      flex-wrap: wrap
-      padding: 0 0 15px 15px
+      padding-bottom: 55px
       &__item
-        position: relative
-        width: 50%
         height: 100%
-        padding-right: 15px
-        margin-top: 15px
-        .heart-btn
-          position: absolute 
-          top: 10px
-          right: 25px
-          height 25px
-          font-size: 20px
-          line-height: 10px
-          color: light-cl
+        display: flex
+        align-items: center
+        padding: 15px
+        border-bottom: 1px solid rgba(dark-cl, .1)
         &--img
+          margin-right: 15px
           figure
-            height: 33.3333%
             margin: 0
-            box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.2);
-            border-radius: 0 0 5px 5px
+            width: 100px
             img
               border-radius: 5px
-              max-width: 100%
+              width: 100%
         &--info
-          position: relative
           display: flex
-          align-items: flex-end
           justify-content: space-between
-          height: 50px
-          background-color: white
-          margin-top: -50px
-          border-radius: 0 0 5px 5px
-          padding: 5px
+          width: 100%
           .data
             line-height: 1.2em
             h2
               margin: 0
-              font-size: 1em
+              font-size: 1.2em
+              font-weight: 500
               color: rgba(dark-cl)
             span
               font-size: .8em
               font-weight: 500
               color: rgba(dark-cl, .7)
           .price
-            // font-size: 1.2em
+            font-size: 1.6em
             color: rgba(dark-cl, .9)
-            span
-              font-size: 1.1em
-              font-weight: 500
+            font-weight: 500
             i
-              font-size: .8em
+              font-size: .7em
   &__content
     height: 100%
 
