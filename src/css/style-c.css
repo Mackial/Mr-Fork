@@ -776,15 +776,16 @@ a {
   width: 100%;
   text-align: center;
 }
-.profile__main .main .category__cont--sect span {
+.profile__main .main .category__cont--sect a {
   width: 100%;
   font-weight: 500;
   color: rgba(72,69,56,0.5);
+  text-decoration: none;
 }
 .profile__main .main .category__cont .on-sect {
   border-bottom: 2px solid #ff773d;
 }
-.profile__main .main .category__cont .on-sect span {
+.profile__main .main .category__cont .on-sect a {
   color: #ff773d;
 }
 .profile__content {
@@ -795,9 +796,7 @@ a {
   padding-bottom: 55px;
 }
 .profile__content .cont__item {
-  height: 100%;
   display: flex;
-  align-items: center;
   padding: 15px;
   border-bottom: 1px solid rgba(72,69,56,0.1);
 }
@@ -813,28 +812,28 @@ a {
   width: 100%;
 }
 .profile__content .cont__item--info {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 .profile__content .cont__item--info .data {
-  line-height: 1.2em;
+  line-height: 1em;
 }
 .profile__content .cont__item--info .data h2 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 500;
   color: #484538;
 }
 .profile__content .cont__item--info .data span {
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-weight: 500;
   color: rgba(72,69,56,0.7);
 }
 .profile__content .cont__item--info .price {
-  font-size: 1.6em;
-  color: rgba(72,69,56,0.9);
+  color: rgba(72,69,56,0.8);
   font-weight: 500;
+}
+.profile__content .cont__item--info .price span {
+  font-size: 1em;
 }
 .profile__content .cont__item--info .price i {
   font-size: 0.7em;
@@ -1048,34 +1047,29 @@ a {
 .short {
   position: fixed;
   bottom: 60px;
-  padding: 10px;
+  padding: 10px 15px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   background-color: #f9fafa;
-  border-radius: 0 10px 0 10px;
   box-shadow: 1px -2px 8px -3px rgba(0,0,0,0.2);
 }
 .short__cut {
+  padding: 2px;
   font-size: 25px;
-  width: 30%;
-  height: 35px;
+  width: 48%;
   text-align: center;
   color: #f9fafa;
+  border-radius: 5px;
 }
 .short__cut a {
   text-decoration: none;
 }
 .short .phone {
-  border-radius: 50px;
   background-color: #0073b7;
 }
 .short .whatsapp {
-  border-radius: 50px;
   background-color: #00b918;
-}
-.short .share {
-  background-color: #484538;
 }
 .notice__cont--item {
   display: flex;
