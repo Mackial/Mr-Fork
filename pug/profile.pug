@@ -18,44 +18,51 @@ block content
                   i.icon-arrow-left2
               .main__cont--info-data
                 h2  Bussines Name
-                span Kind of food
+                span Address
               .main__cont--info-logo
                 figure
                   img(src="src/assets/img/perfil-cover-default.svg", alt="")
                 .wait-time
-                  span Envio -
+                  span Costo de envio 
                   i.icon-dinero
                   span.price 10
             .category
               .category__cont
                 .category__cont--sect.on-sect
-                  span Dish
+                  a(href="#tacos") Tacos
                 .category__cont--sect
-                  span Dish
+                  a(href="#quesadillas") Quesadillas
                 .category__cont--sect
-                  span Dish
+                  a(href="#tortas") Tortas
                 .category__cont--sect
-                  span Dish
+                  a(href="#bebidas") Bebidas
                 .category__cont--sect
-                  span Dish
-                .category__cont--sect
-                  span Dish
+                  a(href="#extras") Extras
             
             
       .profile__content
         .cont
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
-          +item-product("perfil-cover-default.svg", "Taquitos", "De Asada", "13")
+          #tacos
+            +item-product("img_default.jpg", "Taco Sencillo", "Taco con tortilla de maiz a mano de Asada, Adobada, Chorizo, Aldilla o Lengua", "13.00")
+            +item-product("img_default.jpg", "Taco Mixto ", "Taco con tortilla de maiz a mano con dos carnes a elegir", "13.00")
+            +item-product("img_default.jpg", "Taco Campechano", "Taco con tortilla de maiz a mano con todas las carnes", "13.00")
+          #tortas
+            +item-product("img_default.jpg", "Torta Sencilla", "Torta con queso y carne de Asada, Adobada, Chorizo", "35.00")
+            +item-product("img_default.jpg", "Torta Mixta", "Torta con queso con dos carnes a elegir", "35.00")
+            +item-product("img_default.jpg", "Torta Campechana", "Torta con queso con todas las carnes", "35.00")
+          #quesadillas
+            +item-product("img_default.jpg", "Quesadilla Sencilla", "Quesadilla con tortilla de maiz a mano con solo queso", "18.00")
+            +item-product("img_default.jpg", "Quesadilla Con Carne", "Quesadilla con tortilla de maiz a mano con carne de Asada, Adobada, Chorizo, Aldilla o Lengua", "25.00")
+            +item-product("img_default.jpg", "Quesadilla Mixta", "Quesadilla con tortilla de maiz a mano con dos carnes a elegir", "25.00")
+            +item-product("img_default.jpg", "Quesadilla Campechana", "Quesadilla con tortilla de maiz a mano con todas las carnes", "25.00")
+          #bebidas
+            +item-product("img_default.jpg", "Agua Fresca 500ML", "Agua fresca de fruta de temporada, preguntar por la del dia", "13.00")
+            +item-product("img_default.jpg", "Agua Fresca 1L", "Agua fresca de fruta de temporada, preguntar por la del dia", "20.00")
+            +item-product("img_default.jpg", "Coca-Cola 500ML", "", "16.00")
+          #extras
+            +item-product("img_default.jpg", "Queso extra", "", "5.00")
+            +item-product("img_default.jpg", "Taco con Doble Tortilla", "", "14.00")
+          
     
     include components/contact-acces.pug
 
